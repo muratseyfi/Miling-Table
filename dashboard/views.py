@@ -11,7 +11,7 @@ def home(request):
 
     page = request.GET.get('page', 1)
 
-    paginator = Paginator(product_list, 5)
+    paginator = Paginator(product_list, 10)
 
     try:
         products = paginator.page(page)
